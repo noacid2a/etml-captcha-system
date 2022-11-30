@@ -1,5 +1,6 @@
 <html>
     <head>
+        <script src="resources/js/script.js"></script>
         <title>Captcha Form</title>
     </head>
 <body>
@@ -17,7 +18,7 @@
         <label>Entrez le captcha: </label><br />
         <p><img src="genCaptcha.php?newCaptcha=<?= rand(); ?>" id="captchaImg" ></p>
 
-        <label for="captcha">Rafraichir le captcha - <a href="">cliquez ici</a></label><br />
+        <label for="captcha">Rafraichir le captcha - <a href="javascript: Refresh(); ">cliquez ici</a></label><br />
             <input type="text" name="captcha" required/>
         </div><br />
         <div>
